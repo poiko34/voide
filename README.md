@@ -2,7 +2,7 @@
 Minimalist terminal text editor written in C.
 
 ## Build
-gcc main.c -o voide
+gcc -g main.c table.c char.c ui.c file.c init.c -o voide
 
 ## Usage
 ./voide filename.txt
