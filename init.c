@@ -19,6 +19,8 @@ void enableRawMode() {
 
     // ISIG — отключает Ctrl+C и Ctrl+Z
     raw.c_lflag &= ~(ECHO | ICANON | IEXTEN | ISIG);
+    // raw.c_cc[VMIN] = 0;
+    // raw.c_cc[VTIME] = 1;
 
     tcsetattr(STDIN_FILENO, TCSANOW, &raw);
 }
