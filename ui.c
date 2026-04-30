@@ -5,7 +5,7 @@
 struct winsize ws;
 
 void tui(Document* doc, const char* filename, Cursor* curs, Tables* tab) {
-    char* name = "voide 2.0";
+    char* name = "voide 1.1";
     int header_height = 1;
     int footer_height = 3;
     int view_height = ws.ws_row - header_height - footer_height;
